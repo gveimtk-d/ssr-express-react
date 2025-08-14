@@ -1,0 +1,24 @@
+{
+  "description": "",
+  "scripts": {
+    "dev:serve": "nodemon --watch dist/server.js --exec node dist/server.js",
+    "dev:build:server": "webpack --config webpack.server.js",
+    "dev:build:client": "webpack --config webpack.client.js",
+    "dev": " npm-run-all --parallel dev:**"
+  },
+  "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-react": "^7.27.1",
+    "babel-loader": "^10.0.0",
+    "express": "^5.1.0",
+    "npm-run-all": "^4.1.5",
+    "webpack": "^5.101.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
