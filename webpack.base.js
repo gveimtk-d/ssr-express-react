@@ -1,5 +1,4 @@
 const path = require("path");
-const  nodeExternals = require("webpack-node-externals");
 module.exports = {
 	mode: "development",
 	watch: true, // 监听文件变化 自动打包 热更新x
@@ -14,7 +13,7 @@ module.exports = {
 		rules: [
 			{
 				test: /\.(js|jsx)$/, // 匹配js和jsx文件
-				exclude:/.\/node_modules/, // 排除node_modules目录
+				exclude:/node_modules/, // 排除node_modules目录
 				use: {
 					loader: "babel-loader", // 使用babel-loader
 					options: {

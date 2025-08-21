@@ -1,5 +1,11 @@
-import React from'react';
-import Home from '@/pages/Home' 
+import React from "react";
+import RouterApp from "@/pages";
+import { BrowserRouter } from "react-router-dom";
+
 export default function App() {
-  return <Home />
+	return (
+		<BrowserRouter>
+			<RouterApp />
+		</BrowserRouter>
+	);
 }
