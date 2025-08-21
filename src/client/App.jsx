@@ -1,11 +1,12 @@
 import React from "react";
-import RouterApp from "@/pages";
 import { BrowserRouter } from "react-router-dom";
+import Index from '@/pages/index'
 
 export default function App() {
-	return (
-		<BrowserRouter>
-			<RouterApp />
-		</BrowserRouter>
-	);
+  return (
+    <BrowserRouter>
+      <Index />
+    </BrowserRouter>
+  )
 }
+ 

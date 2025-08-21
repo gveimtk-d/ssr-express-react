@@ -1,10 +1,11 @@
 import React from 'react'
-import { renderRoutes } from 'react-router-config';
-import  routes  from '@/routes'
-export default function index() {
+import AppRoutes from '@/routes'
+import Header from '../components/Header'
+export default function Index() {
   return (
     <div>
-         {renderRoutes(routes)}
+      <Header />
+      <AppRoutes />
     </div>
   )
 }
